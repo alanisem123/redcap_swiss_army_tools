@@ -1,0 +1,99 @@
+{
+  "name": "advanced-tools",
+  "display_name": "Advanced Tools",
+  "type": "plugin",
+  "version": "1.0",
+  "page": "Design/online_designer.php",
+  "main_file_name": "advanced_tools_main.php",
+  "redcap_add_edit_records_page": "false",
+  "redcap_control_center": "false",
+  "redcap_custom_verify_username": "false",
+  "redcap_data_entry_form": "false",
+  "redcap_data_entry_form_top": "false",
+  "redcap_every_page_before_render": "false",
+  "redcap_every_page_top": "true",
+  "redcap_project_home_page": "false",
+  "redcap_save_record": "false",
+  "redcap_survey_complete": "false",
+  "redcap_survey_page": "false",
+  "redcap_survey_page_top": "false",
+  "redcap_user_rights": "false",
+  "tab-label":{
+    "ENG": "Advanced Tools",
+    "ESP": "Herramientas Avanzadas",
+    "FRN": "Outils avances",
+    "GRM": "Erweiterte Tools",
+    "POR": "Ferramentas avancadas"
+  },
+  "description" : {
+    "ENG": "The Advanced Tools gives you a series of additional features so you can make the best use of REDCap. These features were identified by members of the REDCap Consortium and were developed through the REDCap-Spanish-framework that manages several hooks and plugins in one single external module. An explanation of every advanced tool currently enabled in your project by your REDCap Administrator can be found below.",
+    "ESP":"Las Herramientas Avanzadas le brindan una serie de funcionalidades adicionales para que pueda hacer un mejor uso de REDCap. Estas caracteristicas fueron identificadas por los integrantes del Consorcio de REDCap y fueron desarrollaron a traves del marco de trabajo del grupo de REDCap-Espanol (llamado Swiss Army) que permite manejear varios Hooks y Plugins desde un solo modulo externo. A continuacion preveemos una explicacion de cada Herramienta Avanzada actualmente habilitada en su proyecto por su administrador de REDCap.",
+    "FRN":"Les outils avances vous offrent une serie de fonctionnalites supplementaires vous permettant d'utiliser au mieux REDCap. Ces fonctionnalites ont ete identifiees par les membres du consortium REDCap et ont ete developpees a l'aide du cadre REDCap-Spanish-Framework qui gere plusieurs points d'ancrage et plugins dans un seul module externe. Vous trouverez ci-dessous une explication de chaque outil avance actuellement active dans votre projet par votre administrateur REDCap.",
+    "GRM":"Die erweiterten Tools bieten Ihnen eine Reihe zusatzlicher Funktionen, mit denen Sie REDCap optimal nutzen konnen. Diese Funktionen wurden von Mitgliedern des REDCap-Konsortiums identifiziert und uber das REDCap-Spanish-Framework entwickelt, das mehrere Hooks und Plugins in einem einzigen externen Modul verwaltet. Nachfolgend finden Sie eine Erlauterung aller erweiterten Tools, die Ihr REDCap-Administrator derzeit in Ihrem Projekt aktiviert hat.",
+    "POR":"As Ferramentas avancadas oferecem uma serie de recursos adicionais para que voce possa fazer o melhor uso do REDCap. Esses recursos foram identificados pelos membros do REDCap Consortium e foram desenvolvidos por meio da estrutura REDCap-espanhola que gerencia varios hooks e plugins em um unico modulo externo. Uma explicasao de todas as ferramentas avancadas atualmente ativadas no seu projeto pelo administrador do REDCap pode ser encontrada abaixo."
+  },
+  "explanation-label":{
+    "ENG": "Explanation of Advanced Tools Enabled in this Project",
+    "ESP": "Explicacion de las herramientas avanzadas habilitadas en este proyecto",
+    "FRN": "Explication des outils avances actives dans ce projet",
+    "GRM": "Erlauterung der in diesem Projekt aktivierten erweiterten Tools",
+    "POR": "Explicacao das ferramentas avancadas ativadas neste projeto"
+  },
+  "explanation": {
+    "ENG": "A comprehensive list of all advanced tools that have been enabled on this project can be found on the link below. It includes the author of the Advanced Tool and detailed documentation that can help you understand how to use these advanced tools, which range from Action Tags, Smart Variables, and project specific Hooks and/or Pluings. For further questions about an specific advanced tool, please reach-out to the person that developed the advanced tool or this External Module author.",
+    "ESP": "Puede encontrar una lista completa de todas las herramientas avanzadas que se han habilitado en este proyecto en el siguiente enlace; incluye el autor de la herramienta avanzada y la documentacion detallada que puede ayudarlo a comprender como usar estas herramientas avanzadas, que van desde etiquetas de accion, variables inteligentes y ganchos y / o enchufes especificos a este proyecto. Para mas preguntas sobre una herramienta avanzada, comuniquese con la persona que desarrollo la herramienta avanzada o con el autor de este modulo externo.",
+    "FRN": "Une liste complete de tous les outils avances actives pour ce projet est disponible sur le lien ci-dessous. Il inclut l'auteur de l'outil avance et une documentation detaillee qui peut vous aider a comprendre comment utiliser ces outils avances, allant des balises d'action aux variables intelligentes, en passant par les crochets et / ou les plans specifiques a un projet. Pour plus de questions sur un outil avance specifique, veuillez contacter la personne qui a developpe l'outil avance ou cet auteur de module externe.",
+    "GRM": "Eine umfassende Liste aller erweiterten Tools, die fur dieses Projekt aktiviert wurden, finden Sie unter dem folgenden Link. Es enthalt den Autor des erweiterten Tools und eine ausfuhrliche Dokumentation, mit deren Hilfe Sie die Verwendung dieser erweiterten Tools verstehen konnen. Diese reichen von Aktions-Tags uber intelligente Variablen bis hin zu projektspezifischen Hooks und / oder Pluings. Bei weiteren Fragen zu einem bestimmten erweiterten Tool wenden Sie sich bitte an die Person, die das erweiterte Tool entwickelt hat, oder an diesen externen Modulautor.",
+    "POR": "Uma lista abrangente de todas as ferramentas avancadas que foram ativadas neste projeto pode ser encontrada no link abaixo. Ele inclui o autor da Ferramenta Avancada e a documentacao detalhada que pode ajuda-lo a entender como usar essas ferramentas avancadas, que variam de Tags de Acao, Variaveis ​​Inteligentes e Ganchos e / ou Pluings especificos do projeto. Para mais perguntas sobre uma ferramenta avancada especifica, entre em contato com a pessoa que desenvolveu a ferramenta avancada ou com o autor deste modulo externo."
+  },
+  "goto": {
+    "ENG": "Go to",
+    "ESP": "Ir a",
+    "FRN": "Aller a",
+    "GRM": "Gehe zu",
+    "POR": "Va para"
+  },
+  "goto-link":{
+    "ENG": "View explanations",
+    "ESP": "Ver explicaciones",
+    "FRN": "Voir les explications",
+    "GRM": "Erklarungen anzeigen",
+    "POR": "Exibir explicacoes"
+  },
+  "pluings-label":{
+    "ENG": "Advanced Tools for Designing your Data Collection Instruments",
+    "ESP": "Herramientas avanzadas para disenar sus instrumentos de recopilacion de datos",
+    "FRN": "Outils avances pour la conception de vos instruments de collecte de donnees",
+    "GRM": "Erweiterte Tools zum Entwerfen Ihrer Datenerfassungsinstrumente",
+    "POR": "Ferramentas avancadas para projetar seus instrumentos de coleta de dados"
+  },
+  "tool-name":{
+    "ENG": "Name:",
+    "ESP": "Nombre:",
+    "FRN": "Nom:",
+    "GRM": "Name:",
+    "POR": "Nome:"
+  },
+  "Type":{
+    "ENG": "Type:",
+    "ESP": "Tipo:",
+    "FRN": "Type:",
+    "GRM": "Art:",
+    "POR": "Tipo"
+  },
+  "Author":{
+    "ENG": "Author:",
+    "ESP": "Autor:",
+    "FRN": "Auteur:",
+    "GRM": "Autor:",
+    "POR": "Autor:"
+  },
+  "Description-word":{
+    "ENG": "Description:",
+    "ESP": "Descripcion:",
+    "FRN": "La description:",
+    "GRM": "Beschreibung",
+    "POR": "Descricao"
+  },
+  "author-sign": "Ed Morales - Boston Ma - emorales7@partners.org"
+}

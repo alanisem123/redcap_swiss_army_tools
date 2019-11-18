@@ -1,0 +1,23 @@
+{
+  "name": "themes_hook",
+  "display_name": "Custom Themes",
+  "type": "hook",
+  "version": "1.0",
+  "main_file_name": "themes_main.php",
+  "redcap_every_page_top": "true",
+  "add":{
+      "ENG": "Add",
+      "ESP": "Agregar",
+      "POR": "Adicionar ",
+      "GRM": "Hinzufugen",
+      "FRN": "Ajouter"
+    },
+  "description": {
+    "ENG": "REDCap hook that includes every action tag, enabled on the Swiss Army Tool Framework, to be included on REDCap's Action Tag Description window. The goal is to provide end-users with a venue of learning more about these action tags.",
+    "ESP": "REDCap hook, que incluye las descripciones de las Etiquetas de Action habilitadas en el marco de trabajo del Swiss Army Tool. El objetivo es proporcionar a los usuarios una mejor comprension de estas etiquetas de accion.",
+    "POR": "Gancho REDCap, que inclui as descricoes dos Tags de Acao ativados na estrutura Swiss Army Tool. O objetivo e fornecer aos usuarios um melhor entendimento dessas tags de acao.",
+    "GRM": "REDCap-Hook, der die Beschreibungen der im Swiss Army Tool Framework aktivierten Action Tags enthalt, um den Benutzern ein besseres Verstandnis dieser Action Tags zu ermoglichen.",
+    "FRN": "Le crochet REDCap, qui comprend la description des balises d'action activees dans le cadre de l'outil Swiss Army Tool, a pour objectif de fournir aux utilisateurs une meilleure comprehension de ces balises d'action."
+  },
+  "author-sign": "Ed Morales - Boston Ma - emorales7@partners.org"
+}

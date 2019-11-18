@@ -1,0 +1,36 @@
+{
+  "name": "conditional_lists",
+  "display_name": "Sub Lists",
+  "type": "action-tag",
+  "version": "4.0",
+  "page": "Ignore",
+  "main_file_name": "mpv_main.php",
+  "default": "@SUB-LISTS={",
+  "redcap_add_edit_records_page": "false",
+  "redcap_control_center": "false",
+  "redcap_custom_verify_username": "false",
+  "redcap_data_entry_form": "false",
+  "redcap_data_entry_form_top": "false",
+  "redcap_every_page_before_render": "false",
+  "redcap_every_page_top": "false",
+  "redcap_project_home_page": "false",
+  "redcap_save_record": "true",
+  "redcap_survey_complete": "false",
+  "redcap_survey_page": "false",
+  "redcap_survey_page_top": "false",
+  "redcap_user_rights": "false",
+  "required":{
+    "ENG":"* Sub-lists",
+    "ESP":"* Sub-listas",
+    "FRN":"* Sous-liste",
+    "GRM":"* Unterverzeichnis",
+    "POR":"* Sublists"
+  },
+  "description": {
+    "ENG": "<b>@SUB-LISTS -</b> <i>copies selected values from two or more radio buttons/drop down sub-lists to another that contains all the options of the former ones. It acts like in the form of selecting a continent from a list and then a country from a specific list and saving the option in the global list (for reporting and other purposes). <b>Example</b> " : @SUB-LISTS='[african_countries], [american_countries], [asian_countries], [european_countries], [oceania_countries]'
+    "ESP": "<b>@SUB-LISTS -</b> <i> copia valores seleccionados de dos o más botones de radio / drop-down lists a otro que contiene todas las opciones de los anteriores. Actúa en la forma de seleccionar un continente de una lista y luego un país de una lista específica y guardar la opción en la lista global de países (para usar en reportes y otros fines). <b> Ejemplo </b> ": @ SUB-LISTS = '[african_countries], [american_countries], [asian_countries], [european_countries], [oceania_countries]' 
+	"FRN": "<b>@SUB-LISTS -</b> <i> copie les valeurs sélectionnées de deux ou plusieurs boutons radio / listes déroulantes dans une autre qui contient toutes les options des anciennes. Cela revient à sélectionner un continent dans une liste, puis un pays dans une liste spécifique, et à enregistrer l'option dans la liste globale (à des fins de rapport et à d'autres fins). <b> Exemple </ b> " : @SUB-LISTS='[african_countries], [american_countries], [asian_countries], [european_countries], [oceania_countries]'
+	"GRN": "<b>@SUB-LISTS -</b> <i> kopiert ausgewählte Werte von zwei oder mehr Optionsfeldern / Dropdown-Unterlisten in eine andere, die alle Optionen der vorherigen enthält. Es funktioniert wie die Auswahl eines Kontinents aus einer Liste und dann eines Landes aus einer bestimmten Liste und das Speichern der Option in der globalen Liste (für Berichterstellung und andere Zwecke). <b> Beispiel </ b> : @SUB-LISTS='[african_countries], [american_countries], [asian_countries], [european_countries], [oceania_countries]'
+	 "POR": "<b>@SUB-LISTS -</b> <i> copia os valores selecionados de dois ou mais botões de opção / sub-listas suspensas para outro que contém todas as opções dos anteriores. Ele age como na forma de selecionar um continente de uma lista e, em seguida, um país de uma lista específica e salvar a opção na lista global (para relatórios e outros fins). <b> Exemplo </b> " : @SUB-LISTS='[african_countries], [american_countries], [asian_countries], [european_countries], [oceania_countries]'
+  "author-sign": "Victor Espinosa (Island Health) - victor.espinosa@viha.ca"
+}
