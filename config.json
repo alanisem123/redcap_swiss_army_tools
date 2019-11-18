@@ -57,6 +57,13 @@
 			"repeatable": false
 		},
 		{
+			"key": "themes_hook",
+			"name": "<b>Themes Hook:</b> <i> Select from six different themes to change REDCap's background. The included themes are: 1), 2), 3), 4), 5, 6) REDCap original theme. <br> <b>Requirement:</b> The plugin named 'Themes UI' must be enable too. <br> <b>Author:</b> Ed Morales (PHS) emorales7@partners.org</i>",
+			"required": false,
+			"type": "checkbox",
+			"repeatable": false
+		},
+		{
 			"key": "plugin-header",
 			"name": "<b>Plugins</b>",
 			"type": "descriptive",
@@ -79,6 +86,13 @@
 		{
 			"key": "conditional_lists",
 			"name": "<b>Add Action Tag Descriptions:</b> <i> REDCap hook that copies selected values from two or more radio buttons/drop down sub-lists	to another that contains all the options of the former ones. It acts in the form of selecting a continent and then a country. <b>Author:</b> Victor Espinosa (Island Health) victor.espinsa@viha.ca",
+			"required": false,
+			"type": "checkbox",
+			"repeatable": false
+		},
+		{
+			"key": "themes_ui",
+			"name": "<b>Themes UI:</b> <i>User interface of the Themes Hook that provides themes options to the end-user's projects.<br><b>Notice:</b> this is only the UI to the Themes Hook. <b>Please enable these two tools together</b> if you want to allow users to change REDCap's theme in their projects. The plugin gives the user the option of resetting the theme back to REDCap's theme.</b> <br> <b>Author:</b> Ed Morales (PHS) emorales7@partners.org</i>",
 			"required": false,
 			"type": "checkbox",
 			"repeatable": false
