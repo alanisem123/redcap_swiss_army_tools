@@ -77,6 +77,13 @@
 			"repeatable": false
 		},
 		{
+			"key": "conditional_lists",
+			"name": "<b>Add Action Tag Descriptions:</b> <i> REDCap hook that copies selected values from two or more radio buttons/drop down sub-lists	to another that contains all the options of the former ones. It acts in the form of selecting a continent and then a country. <b>Author:</b> Victor Espinosa (Island Health) victor.espinsa@viha.ca",
+			"required": false,
+			"type": "checkbox",
+			"repeatable": false
+		},
+		{
 			"key": "plugin-temp-1",
 			"name": "<b>Plugin Template:</b> <i>plugin, added to the Online Designer, containing documentation of how the Swiss Army Tools are used, including UIs for Advanced Tools. <br> <b>Author:</b> Ed Morales (PHS) emorales7@partners.org</i>",
 			"required": false,
