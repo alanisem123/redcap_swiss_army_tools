@@ -1,2 +1,0 @@
-<?php
-print "TEST123";?>
