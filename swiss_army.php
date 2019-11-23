@@ -11,7 +11,7 @@ class swiss_army extends \ExternalModules\AbstractExternalModule
 
     const PATH_TO_HOOKS = 'features/';
 
-    function redcap_add_edit_records_page($project_id, $instrument, $event_id, $repeat_instance)
+    function redcap_add_edit_records_page($project_id, $instrument, $event_id)
     {
         //        Read all files that contain hooks - they are found in folders inside hooks
         $url= __DIR__.'/'.$this::PATH_TO_HOOKS;
