@@ -5,9 +5,10 @@
 // Either read the css file or adjust the css using PHP arrays
 $script = <<<SCRIPT
 	<style type='text/css'>
+		 
 		 body {
 	/*background-color: #222;*/
-	color: #0c0c0c;
+	color: #45c5e2;
 	background-image: -webkit-linear-gradient(left, #005e82, #222);
 	/*background-image: url('/redcap/modules/redcap_css_injector_v1.0.0/img/forest.jpg');*/
 	/*background-repeat:repeat;*/
@@ -22,10 +23,10 @@ $script = <<<SCRIPT
 }
 a{
 color: unset;
-color: #71e5ff;
+color: #5ea1c1;
 }
 A:link {
-    color: #71e5ff;
+    color: #5ea1c1;
 }
 
 A:visited {
@@ -126,6 +127,9 @@ element.style {
 .chklist {
     background-image: -webkit-linear-gradient(left, #005e82, #222);
     color: #bbb6b6;
+}
+.ui-widget-content {
+     color: #a07b7b;
 }
 	</style>
 SCRIPT;

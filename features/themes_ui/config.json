@@ -19,25 +19,32 @@
   "redcap_survey_page_top": "false",
   "redcap_user_rights": "false",
   "description": {
-    "ENG": "The Advanced Tools gives you a series of additional features so you can make the best use of REDCap. These features were identified by members of the REDCap Consortium and were developed through the REDCap-Spanish-framework that manages several hooks and plugins in one single external module. An explanation of every advanced tool currently enabled in your project by your REDCap Administrator can be found below.",
-    "ESP":"Las Herramientas Avanzadas le brindan una serie de funcionalidades adicionales para que pueda hacer un mejor uso de REDCap. Estas caracteristicas fueron identificadas por los integrantes del Consorcio REDCap y fueron desarrollaron a traves del marco de trabajo del grupo de REDCap-Espanol que permite manjear varios Hooks y Plugins desde un solo modulo externo. A continuacion preveemos una explicacion de cada Herramienta Avanzada actualmente habilitada en su proyecto por su administrador de REDCap.",
-    "FRN":"Les outils avances vous offrent une serie de fonctionnalites supplementaires vous permettant d'utiliser au mieux REDCap. Ces fonctionnalites ont ete identifiees par les membres du consortium REDCap et ont ete developpees a l'aide du cadre REDCap-Spanish-Framework qui gere plusieurs points d'ancrage et plugins dans un seul module externe. Vous trouverez ci-dessous une explication de chaque outil avance actuellement active dans votre projet par votre administrateur REDCap.",
-    "GRM":"Die erweiterten Tools bieten Ihnen eine Reihe zusatzlicher Funktionen, mit denen Sie REDCap optimal nutzen konnen. Diese Funktionen wurden von Mitgliedern des REDCap-Konsortiums identifiziert und uber das REDCap-Spanish-Framework entwickelt, das mehrere Hooks und Plugins in einem einzigen externen Modul verwaltet. Nachfolgend finden Sie eine Erlauterung aller erweiterten Tools, die Ihr REDCap-Administrator derzeit in Ihrem Projekt aktiviert hat.",
-    "POR":"As Ferramentas avancadas oferecem uma serie de recursos adicionais para que voce possa fazer o melhor uso do REDCap. Esses recursos foram identificados pelos membros do REDCap Consortium e foram desenvolvidos por meio da estrutura REDCap-espanhola que gerencia varios hooks e plugins em um unico modulo externo. Uma explicasao de todas as ferramentas avancadas atualmente ativadas no seu projeto pelo administrador do REDCap pode ser encontrada abaixo."
+    "ENG": "You can change REDCap's background theme by selecting one of the following and saving your selection.",
+    "ESP":"Puedes cambiar el tema de fondo de REDCap seleccionando uno de los siguientes y guardando su seleccion.",
+    "FRN":"Vous pouvez changer le theme d'arriere-plan de REDCap en selectionnant l'une des options suivantes et en enregistrant votre selection.",
+    "GRM":"Sie konnen das Hintergrunddesign von REDCap andern, indem Sie eine der folgenden Optionen auswahlen und Ihre Auswahl speichern.",
+    "POR":"Voce pode alterar o tema de plano de fundo do REDCap selecionando uma das seguintes opcoes e salvando sua selecao."
   },
   "short-description":{
     "ENG": "Change REDCap's background theme.",
-    "ESP": "(ESP)Describe what your plugin does using less than 40 words.",
-    "FRN": "(FRN)Describe what your plugin does using less than 40 words.",
-    "GRM": "(GRM)Describe what your plugin does using less than 40 words.",
-    "POR": "(POR)Describe what your plugin does using less than 40 words."
+    "ESP": "Cambia el tema de fondo de REDCap.",
+    "FRN": "Changer le theme de fond de REDCap.",
+    "GRM": "Andern Sie das Hintergrunddesign von REDCap.",
+    "POR": "Altere o tema de plano de fundo do REDCap."
   },
   "help-tool-tip":{
     "ENG": "There are 6 options to choose from.",
-    "ESP": "(ESP)Why, when, and how it makes our lives easier.",
-    "FRN": "(FRN)Why, when, and how it makes our lives easier.",
-    "GRM": "(GRM)Why, when, and how it makes our lives easier.",
-    "POR": "(POR)Why, when, and how it makes our lives easier."
+    "ESP": "Hay 6 opciones para elegir.",
+    "FRN": "Il y a 6 options a choisir.",
+    "GRM": "Es stehen 6 Optionen zur Auswahl.",
+    "POR": "Existem 6 opcoes para escolher."
+  },
+  "save-button-label":{
+    "ENG": "Save Selection",
+    "ESP": "Guardar Seleccion",
+    "FRN": "Enregistrer la Selection",
+    "GRM": "Auswahl Speichern",
+    "POR": "Salvar Selecao"
   },
   "author-sign": "Ed Morales - Boston Ma - emorales7@partners.org"
 }

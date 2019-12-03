@@ -218,8 +218,8 @@ class swiss_army extends \ExternalModules\AbstractExternalModule
 //                        - and if file exists ( if(!@include("script.php")))
 //                        - and if its configured to be loaded on the current page
 //                        - other conditions can be added too.
-                        if($this->getProjectSetting($config['name']) == true & $config['redcap_every_page_top'] == 'true'
-                            & PAGE == $config['page']){
+                        if($this->getProjectSetting($config['name']) == true & $config['redcap_every_page_top'] == 'true'){
+//                            & PAGE == $config['page']){
                             if(!@include_once($main_ulr));
                         }
                     }

@@ -44,6 +44,13 @@
 			"repeatable": false
 		},
 		{
+			"key": "conditional_lists",
+			"name": "<b>@COND-LISTS:</b> <i> REDCap hook that copies values entered in any of two or more radio buttons/drop down sub-lists to another hiden field that contains all the options of the former ones. It acts in the form of selecting a continent and then a country within that continent.</br> <b>Author:</b> Victor Espinosa (Island Health) victor.espinsa@viha.ca</i>",
+			"required": false,
+			"type": "checkbox",
+			"repeatable": false
+		},
+		{
 			"key": "hook-header",
 			"name": "<b>Hooks</b>",
 			"type": "descriptive",
@@ -79,13 +86,6 @@
 		{
 			"key": "phi-autochecker",
 			"name": "<b>PHI Autochecker:</b> <i>Plugin that identifies fields that contain keywords of PHI and allows user to enable them as identifiers by clicking a button. It achieves this by downloading the project's data dictionary, flagging the fields, and uploading the data dictionary, by the click of a button.<br> <b>Author:</b> Luis Sanchez - REDCap Spanish Group - luischipper@gmail.com</i>",
-			"required": false,
-			"type": "checkbox",
-			"repeatable": false
-		},
-		{
-			"key": "conditional_lists",
-			"name": "<b>Add Action Tag Descriptions:</b> <i> REDCap hook that copies selected values from two or more radio buttons/drop down sub-lists	to another that contains all the options of the former ones. It acts in the form of selecting a continent and then a country. <b>Author:</b> Victor Espinosa (Island Health) victor.espinsa@viha.ca",
 			"required": false,
 			"type": "checkbox",
 			"repeatable": false

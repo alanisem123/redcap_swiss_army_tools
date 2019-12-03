@@ -1,4 +1,10 @@
 <?php
+namespace Partners\swiss_army;
+
+use \ExternalModules\AbstractExternalModule as AEM;
+use ExternalModules\ExternalModules as EM;
+
+list($prefix, $version) = EM::getParseModuleDirectoryPrefixAndVersion(AEM::getModuleDirectoryName());
 
 // Only run this code if the user has select a theme.
 // The users settings are saved on the external module configuration table.
@@ -9,16 +15,24 @@ $script = <<<SCRIPT
 	/*background-color: #222;*/
 	color: #0c0c0c;
 	/*background-image: -webkit-linear-gradient(left, #005e82, #222);*/
-	background-image: url('/redcap/modules/redcap_css_injector_v1.0.0/img/forest.jpg');
+	background-image: url('/redcap/modules/swiss_army_{$version}/features/themes_hook/pics/forest.jpg');
 	background-repeat:repeat;
 }
 
 #center {
+    background-image: -webkit-linear-gradient(left, #bf9f43, #a04b01)
     /*background-color: #212529;*/	
-	background-image: url('/redcap/modules/redcap_css_injector_v1.0.0/img/forest.jpg');, linear-gradient(#eb01a5, #d13531); 
+	/*background-image: url('/redcap/modules/swiss_army_v0.1/features/themes_hook/pics/forest.jpg');, linear-gradient(#eb01a5, #d13531); */
 	/*background-image: -webkit-linear-gradient(top, #005e82, transparent);*/
-	background-repeat:repeat;
+	/*background-repeat:repeat;*/
 }
+
+.chklist_comp a:link, .chklist_comp a:visited, .chklist_comp a:active, .chklist_comp a:hover {
+    color: #fff;
+    font-size: 10px;
+    text-decoration: underline;
+}
+
 
 A:link {
     color: #ffffff;
@@ -52,7 +66,7 @@ element.style {
 }
 
 #south table td {
-    /*color: #bbd23b;*/
+    color: #fff;
 	background-image: -webkit-linear-gradient(left, #bf9f43, #a04b01);	
 }
 
