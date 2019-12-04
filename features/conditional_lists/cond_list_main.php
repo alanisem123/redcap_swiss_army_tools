@@ -1,16 +1,16 @@
 <?php
 /**
  * Hook NAME: sub_lists.php
- * DESCRIPTION: Script for reading the @SUB-LISTS action tag to copy in a dropdown list the option selected in one of the conditional lists, 
+ * DESCRIPTION: Script for reading the @COND-LISTS action tag to copy in a dropdown list the option selected in one of the conditional lists, 
  * each of them containing a subset of options (each using different code numbers) in the target dropdown list where the action tag has been declared.
  * NOTE: This new action tag can be added to the REDCap list of tags (but not necessarily) by inserting its name and explanation in redcap\redcap_v7.4.3\Classes\Form.php:
- *       Name:          @SUB-LISTS
+ *       Name:          @COND-LISTS
  *       Explanation:   Conditional list: Sets the value in a global dropdown list from a series of sublists. This action tag copies in a dropdown list the option selected 
  *                      in one of the conditional lists, each of them containing a subset of options in the target 
  *                      dropdown list field where the action tag has been declared. It's needed that the sublists will be branched logic in such a way that at any given case
  *                      only one sublist is shown and the global dropdown list is hidden. The action tag format must follow the pattern 
- *                      @SUB-LISTS='????' in which it will list the fields acting as sub dropdown lists, declared inside single quotes. - e.g.,  
- *                      @SUB-LISTS='[america],[europe],[africa],[asia],[oceania]' 
+ *                      @COND-LISTS='????' in which it will list the fields acting as sub dropdown lists, declared inside single quotes. - e.g.,  
+ *                      @COND-LISTS='[america],[europe],[africa],[asia],[oceania]' 
  *       To work in a given project, this Hook still will need to be added to the corresponding hook project's folder
  * This version works for fields used in regular or repeatable instruments or even in repeatable events
  * Uses REDCap hook/plugin functions. 
@@ -35,14 +35,14 @@ foreach($fields as $field) {
 	$instances_used = array();
 	// checks if there is any annotation for that field
 	if($dd[$field][field_annotation] != "") {
-		// Looking for SUB-LISTS action tag
-		$pos = strpos($dd[$field][field_annotation],'@SUB-LISTS');
+		// Looking for COND-LISTS action tag
+		$pos = strpos($dd[$field][field_annotation],'@COND-LISTS');
 		if ($pos === false) 
 		  continue;
 		else if ($pos >= 0) {
 			echo "field with Sublist: " . $field . " </br>";
 			// 
-			// Gets @SUB-LISTS from the annotation field
+			// Gets @COND-LISTS from the annotation field
 			$action_tag_substr = substr($dd[$field][field_annotation],$pos);
 			// Gets position of initial and final quotations (')
 			$pos_quotation = strpos($action_tag_substr,"'");
@@ -57,7 +57,7 @@ foreach($fields as $field) {
 			// REPEATABLE FORM initialization
 			// gets instrument name for field with the action tag
 			$instrument_name = $dd[$field]['form_name'];
-			// works within each event for each sub-list field separately
+			// works within each event for each cond-list field separately
 			// Gets the keys (record_ids) for existing instances
 			$instances_used = $data[$record]["repeat_instances"][$event_id][$instrument_name]; 
 			$instances_used_keys = array_keys($instances_used);
