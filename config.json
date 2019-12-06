@@ -44,8 +44,8 @@
 			"repeatable": false
 		},
 		{
-			"key": "conditional_lists",
-			"name": "<b>@COND-LISTS:</b> <i> REDCap hook that copies values entered in any of two or more radio buttons/drop down sub-lists to another hiden field that contains all the options of the former ones. It acts in the form of selecting a continent and then a country within that continent.</br> <b>Author:</b> Victor Espinosa (Island Health) victor.espinsa@viha.ca</i>",
+			"key": "cond_lists",
+			"name": "<b>@COND-LISTS:</b> <i> REDCap hook that copies values entered in any of two or more radio buttons/drop down sub-lists to another hidden field that contains all the options of the former ones. It acts in the form of selecting a continent and then a country within that continent.</br> <b>Author:</b> Victor Espinosa (Island Health) victor.espinsa@viha.ca</i>",
 			"required": false,
 			"type": "checkbox",
 			"repeatable": false
