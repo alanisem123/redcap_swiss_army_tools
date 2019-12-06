@@ -6,38 +6,40 @@ use ExternalModules\ExternalModules as EM;
 
 global $Proj;
 
-$lang = $this->getProjectSetting('language');
+if (PAGE == 'Design/online_designer.php') {
 
-$Version = EM::getModuleVersionByPrefix('swiss_army');
+    $lang = $this->getProjectSetting('language');
+
+    $Version = EM::getModuleVersionByPrefix('swiss_army');
 
 // Reading hooks config-settings. It is recommended that you leave this in place.
-$config_h_ulr = __DIR__ . '/config.json';
-$contents = file_get_contents($config_h_ulr);
-$contents = utf8_encode($contents);
-$config_h = json_decode($contents, true);
+    $config_h_ulr = __DIR__ . '/config.json';
+    $contents = file_get_contents($config_h_ulr);
+    $contents = utf8_encode($contents);
+    $config_h = json_decode($contents, true);
 
 // Generating list of action-tags and their descriptions
-foreach (scandir("../../modules/swiss_army_$Version/features/") as $folder) {
-    if (!in_array($folder, array(".", ".."))) {
+    foreach (scandir("../../modules/swiss_army_$Version/features/") as $folder) {
+        if (!in_array($folder, array(".", ".."))) {
 //      Find and read the action-tags' config.json
-        $sub_url = "../../modules/swiss_army_$Version/features/" . $folder; // @here
-        foreach (scandir($sub_url) as $file) {
-            if ($file == 'config.json') {
-                $config_ulr = "../../modules/swiss_army_$Version/features/" . $folder . '/' . $file;
-                $contents = file_get_contents($config_ulr);
-                $contents = utf8_encode($contents);
-                $config_x = json_decode($contents, true);
+            $sub_url = "../../modules/swiss_army_$Version/features/" . $folder; // @here
+            foreach (scandir($sub_url) as $file) {
+                if ($file == 'config.json') {
+                    $config_ulr = "../../modules/swiss_army_$Version/features/" . $folder . '/' . $file;
+                    $contents = file_get_contents($config_ulr);
+                    $contents = utf8_encode($contents);
+                    $config_x = json_decode($contents, true);
 //              Include actiong tags that have been enabled on the Ext-Mod config
 //              - other conditions can be added too.
-                if ($config_x['name'] != 'advanced-tools' and $this->getProjectSetting($config_x['name']) == true and $config_x['type'] == 'action-tag') {
-                    $desc = $config_x['description'][$lang];
-                    $author = $config_x['author-sign'];
-                    $ATD = $desc . "<br> <b>Author: </b>" . $author;
-                    $ATName = "@" . $config_x['display_name'];
-                    $add = $config_h['add'][$lang];
-                    $AT_default = $config_x['default'];
+                    if ($config_x['name'] != 'advanced-tools' and $this->getProjectSetting($config_x['name']) == true and $config_x['type'] == 'action-tag') {
+                        $desc = $config_x['description'][$lang];
+                        $author = $config_x['author-sign'];
+                        $ATD = $desc . "<br> <b>Author: </b>" . $author;
+                        $ATName = "@" . $config_x['display_name'];
+                        $add = $config_h['add'][$lang];
+                        $AT_default = $config_x['default'];
 
-                    $script = <<<SCRIPT
+                        $script = <<<SCRIPT
 <script type="text/javascript">
 
  document.addEventListener("DOMNodeInserted", function(event){
@@ -67,7 +69,8 @@ foreach (scandir("../../modules/swiss_army_$Version/features/") as $folder) {
             </script>
 SCRIPT;
 //                    Adding only action tags to the Action Tag Description Window
-                    print $script;
+                        print $script;
+                    }
                 }
             }
         }

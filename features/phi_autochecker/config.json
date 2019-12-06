@@ -4,7 +4,7 @@
   "type": "plugin",
   "version": "1.0",
   "page": "plugin-page",
-  "main_file_name": "datadictionaryPOC.php",
+  "main_file_name": "phi_autochecker.php",
   "main_folder_name":"phi_autochecker",
   "redcap_add_edit_records_page": "false",
   "redcap_control_center": "false",
@@ -28,17 +28,52 @@
   },
   "short-description":{
     "ENG": "Automatically set identifier fields by using this PHI Autochecker's UI.",
-    "ESP": "(ESP)Describe what your plugin does using less than 40 words.",
-    "FRN": "(FRN)Describe what your plugin does using less than 40 words.",
-    "GRM": "(GRM)Describe what your plugin does using less than 40 words.",
-    "POR": "(POR)Describe what your plugin does using less than 40 words."
+    "ESP": "Establezca automaticamente los campos de identificacion mediante el uso de esta interfaz de usuario de PHI Autochecker.",
+    "FRN": "Definissez automatiquement les champs d'identifiant a l'aide de cette interface utilisateur PHI Autochecker.",
+    "GRM": "Automatische Festlegung von Bezeichnerfeldern mithilfe der Benutzeroberflache dieses PHI-Autocheckers.",
+    "POR": "Defina automaticamente os campos do identificador usando a interface do usuario do PHI Autochecker."
   },
   "help-tool-tip":{
     "ENG": "It sets the identifier flag for you.",
-    "ESP": "Asigna campos como un identificador automaticamente",
-    "FRN": "(FRN)Why, when, and how it makes our lives easier.",
-    "GRM": "(GRM)Why, when, and how it makes our lives easier.",
-    "POR": "(POR)Why, when, and how it makes our lives easier."
+    "ESP": "Establece el indicador de identificacion por usted.",
+    "FRN": "Il definit l'indicateur d'identification pour vous.",
+    "GRM": "Es setzt das Identifier-Flag fur Sie.",
+    "POR": "Ele define o sinalizador identificador para voce."
+  },
+  "intro":{
+    "ENG": "In order to improve the tagging of identifiers (i.e. fields containing PHI) a button that finds these fields and tags them for you is provided below. The fields considered to be PHI in this case are the following:",
+    "ESP": "A fin de mejorar el etiquetado de los identificadores (es decir, campos que contienen PHI), a continuacion se proporciona un boton que encuentra estos campos y los etiqueta. Los campos considerados como PHI en este caso son los siguientes:",
+    "FRN": "Afin d'ameliorer l'etiquetage des identifiants (c'est-a-dire les champs contenant des informations PHI), un bouton permettant de rechercher ces champs et de les etiqueter pour vous est fourni ci-dessous. Les champs consideres comme PHI dans ce cas sont les suivants:",
+    "GRM": "Um die Kennzeichnung von Kennungen (d. H. Feldern, die PHI enthalten) zu verbessern, wird unten eine Schaltflache bereitgestellt, die diese Felder findet und sie fur Sie kennzeichnet. Die Felder, die in diesem Fall als PHI betrachtet werden, sind die folgenden:",
+    "POR": "Para melhorar a marcacao de identificadores (ou seja, campos contendo PHI), e fornecido abaixo um botao que encontra esses campos e os marca para voce. Os campos considerados PHI neste caso sao os seguintes:"
+  },
+  "instructions":{
+    "ENG": "Press the following button to download a new version of this project's data dictionary with its PHI fields tagged as identifiers in the data dictionary.",
+    "ESP": "Presione el siguiente boton para descargar una nueva version del diccionario de datos de este proyecto con sus campos PHI etiquetados como identificadores en el diccionario de datos.",
+    "FRN": "Appuyez sur le bouton suivant pour telecharger une nouvelle version du dictionnaire de donnees de ce projet avec ses champs PHI etiquetes comme identificateurs dans le dictionnaire de donnees.",
+    "GRM": "Klicken Sie auf die folgende Schaltflache, um eine neue Version des Datenworterbuchs dieses Projekts mit den im Datenworterbuch als Bezeichner gekennzeichneten PHI-Feldern herunterzuladen.",
+    "POR": "Pressione o botao a seguir para baixar uma nova versao do dicionario de dados deste projeto com seus campos PHI marcados como identificadores no dicionario de dados."
+  },
+  "now-what":{
+    "ENG": "After pressing this button the browser should show the that the new data dictionary has been downloaded. Open and inspect this file, and double check that the identifier tag has been checked for only the expected fields.",
+    "ESP": "Despues de presionar este boton, el navegador debe mostrar que se ha descargado el nuevo diccionario de datos. Abra e inspeccione este archivo y verifique que la etiqueta de identificacion se haya verificado solo para los campos esperados.",
+    "FRN": "Apres avoir appuye sur ce bouton, le navigateur doit indiquer que le nouveau dictionnaire de donnees a ete telecharge. Ouvrez et inspectez ce fichier et verifiez que la balise d'identificateur n'a ete vérifiee que pour les champs attendus.",
+    "GRM": "Nach dem Drucken dieser Taste sollte der Browser anzeigen, dass das neue Datenworterbuch heruntergeladen wurde. Offnen und untersuchen Sie diese Datei und uberprufen Sie, ob das Bezeichner-Tag nur fur die erwarteten Felder uberpruft wurde.",
+    "POR": "Depois de pressionar esse botao, o navegador deve mostrar que o novo dicionario de dados foi baixado. Abra e inspecione este arquivo e verifique se a etiqueta identificadora foi verificada apenas para os campos esperados."
+  },
+  "do-this":{
+    "ENG": "If you're comfortable with this new data dictionary, please use REDCap's Data Dictionary button (on the top of this page) to upload the new data dictionary.",
+    "ESP": "Si se siente comodo con este nuevo diccionario de datos, utilice el boton Diccionario de datos de REDCap (en la parte superior de esta pagina) para cargar el nuevo diccionario de datos.",
+    "FRN": "Si vous etes a l'aise avec ce nouveau dictionnaire de donnees, veuillez utiliser le bouton Dictionnaire de donnees de REDCap (en haut de cette page) pour telecharger le nouveau dictionnaire de donnees.",
+    "GRM": "Wenn Sie mit diesem neuen Datenworterbuch vertraut sind, laden Sie das neue Datenworterbuch uber die Schaltflache Datenworterbuch von REDCap (oben auf dieser Seite) hoch.",
+    "POR": "Se voce se sentir confortavel com este novo dicionario de dados, use o botao Dicionario de Dados do REDCap (na parte superior desta pagina) para fazer upload do novo dicionario de dados."
+  },
+  "download-button-label":{
+    "ENG": "Download",
+    "ESP": "Descargar",
+    "FRN": "Telecharger",
+    "GRM": "Herunterladen",
+    "POR": "Baixar"
   },
   "author-sign": "Luis Sanchez - REDCap Spanish Group - luischipper@gmail.com"
 }
