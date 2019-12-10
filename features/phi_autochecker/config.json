@@ -41,11 +41,11 @@
     "POR": "Ele define o sinalizador identificador para voce."
   },
   "intro":{
-    "ENG": "In order to improve the tagging of identifiers (i.e. fields containing PHI) a button that finds these fields and tags them for you is provided below. The fields considered to be PHI in this case are the following:",
-    "ESP": "A fin de mejorar el etiquetado de los identificadores (es decir, campos que contienen PHI), a continuacion se proporciona un boton que encuentra estos campos y los etiqueta. Los campos considerados como PHI en este caso son los siguientes:",
-    "FRN": "Afin d'ameliorer l'etiquetage des identifiants (c'est-a-dire les champs contenant des informations PHI), un bouton permettant de rechercher ces champs et de les etiqueter pour vous est fourni ci-dessous. Les champs consideres comme PHI dans ce cas sont les suivants:",
-    "GRM": "Um die Kennzeichnung von Kennungen (d. H. Feldern, die PHI enthalten) zu verbessern, wird unten eine Schaltflache bereitgestellt, die diese Felder findet und sie fur Sie kennzeichnet. Die Felder, die in diesem Fall als PHI betrachtet werden, sind die folgenden:",
-    "POR": "Para melhorar a marcacao de identificadores (ou seja, campos contendo PHI), e fornecido abaixo um botao que encontra esses campos e os marca para voce. Os campos considerados PHI neste caso sao os seguintes:"
+    "ENG": "In order to improve the tagging of identifiers (i.e. fields containing PHI) a button that finds these fields and tags them for you is provided below. The fields considered to be PHI in this case are the following (without special characters):",
+    "ESP": "A fin de mejorar el etiquetado de los identificadores (es decir, campos que contienen PHI), a continuacion se proporciona un boton que encuentra estos campos y los etiqueta. Los campos considerados como PHI en este caso son los siguientes (sin caracteres especiales):",
+    "FRN": "Afin d'ameliorer l'etiquetage des identifiants (c'est-a-dire les champs contenant des informations PHI), un bouton permettant de rechercher ces champs et de les etiqueter pour vous est fourni ci-dessous. Les champs consideres comme PHI dans ce cas sont les suivants (sans caracteres speciaux):",
+    "GRM": "Um die Kennzeichnung von Kennungen (d. H. Feldern, die PHI enthalten) zu verbessern, wird unten eine Schaltflache bereitgestellt, die diese Felder findet und sie fur Sie kennzeichnet. Die Felder, die in diesem Fall als PHI betrachtet werden, sind die folgenden (ohne Sonderzeichen):",
+    "POR": "Para melhorar a marcacao de identificadores (ou seja, campos contendo PHI), e fornecido abaixo um botao que encontra esses campos e os marca para voce. Os campos considerados PHI neste caso sao os seguintes (sem caracteres especiais):"
   },
   "instructions":{
     "ENG": "Press the following button to download a new version of this project's data dictionary with its PHI fields tagged as identifiers in the data dictionary.",

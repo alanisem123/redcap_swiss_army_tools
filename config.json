@@ -99,7 +99,7 @@
 		},
 		{
 			"key": "plugin-temp-1",
-			"name": "<b>Plugin Template:</b> <i>plugin, added to the Online Designer, containing documentation of how the Swiss Army Tools are used, including UIs for Advanced Tools. <br> <b>Author:</b> Ed Morales (PHS) emorales7@partners.org</i>",
+			"name": "<b>Plugin Template:</b> <i>sample plugin, added to the Online Designer's Advanced Tools, that contains underlying code showing how to add plugins to the Swiss Army Framework. <br> <b>Author:</b> Ed Morales (PHS) emorales7@partners.org</i>",
 			"required": false,
 			"type": "checkbox",
 			"repeatable": false

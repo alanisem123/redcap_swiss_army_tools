@@ -20,25 +20,25 @@
   "redcap_survey_page_top": "false",
   "redcap_user_rights": "false",
   "description": {
-    "ENG": "The Advanced Tools gives you a series of additional features so you can make the best use of REDCap. These features were identified by members of the REDCap Consortium and were developed through the REDCap-Spanish-framework that manages several hooks and plugins in one single external module. An explanation of every advanced tool currently enabled in your project by your REDCap Administrator can be found below.",
-    "ESP":"Las Herramientas Avanzadas le brindan una serie de funcionalidades adicionales para que pueda hacer un mejor uso de REDCap. Estas caracteristicas fueron identificadas por los integrantes del Consorcio REDCap y fueron desarrollaron a traves del marco de trabajo del grupo de REDCap-Espanol que permite manjear varios Hooks y Plugins desde un solo modulo externo. A continuacion preveemos una explicacion de cada Herramienta Avanzada actualmente habilitada en su proyecto por su administrador de REDCap.",
-    "FRN":"Les outils avances vous offrent une serie de fonctionnalites supplementaires vous permettant d'utiliser au mieux REDCap. Ces fonctionnalites ont ete identifiees par les membres du consortium REDCap et ont ete developpees a l'aide du cadre REDCap-Spanish-Framework qui gere plusieurs points d'ancrage et plugins dans un seul module externe. Vous trouverez ci-dessous une explication de chaque outil avance actuellement active dans votre projet par votre administrateur REDCap.",
-    "GRM":"Die erweiterten Tools bieten Ihnen eine Reihe zusatzlicher Funktionen, mit denen Sie REDCap optimal nutzen konnen. Diese Funktionen wurden von Mitgliedern des REDCap-Konsortiums identifiziert und uber das REDCap-Spanish-Framework entwickelt, das mehrere Hooks und Plugins in einem einzigen externen Modul verwaltet. Nachfolgend finden Sie eine Erlauterung aller erweiterten Tools, die Ihr REDCap-Administrator derzeit in Ihrem Projekt aktiviert hat.",
-    "POR":"As Ferramentas avancadas oferecem uma serie de recursos adicionais para que voce possa fazer o melhor uso do REDCap. Esses recursos foram identificados pelos membros do REDCap Consortium e foram desenvolvidos por meio da estrutura REDCap-espanhola que gerencia varios hooks e plugins em um unico modulo externo. Uma explicasao de todas as ferramentas avancadas atualmente ativadas no seu projeto pelo administrador do REDCap pode ser encontrada abaixo."
+    "ENG": "Sample plugin, added to the Online Designer's Advanced Tools, that contains underlying code showing how to add plugins to the Swiss Army Framework.",
+    "ESP": "Ejemplo de plugin, agregado a las Herramientas avanzadas del disenador en linea, que contiene el codigo subyacente que muestra como agregar Plugins al Marco del Swiss Army.",
+    "FRN": "Exemple de plugin, ajoute aux outils avances du concepteur en ligne, qui contient du code sous-jacent montrant comment ajouter des plugins au Swiss Army Framework.",
+    "GRM": "Beispiel-Plugin, das zu den erweiterten Tools des Online-Designers hinzugefugt wurde und den zugrunde liegenden Code zum Hinzufugen von Plugins zum Swiss Army Framework enthalt.",
+    "POR": "Plug-in de amostra, adicionado as Ferramentas avancadas do Online Designer, que contem o codigo subjacente que mostra como adicionar plug-ins ao Swiss Army Framework."
   },
   "short-description":{
-    "ENG": "(ENG)Describe what your plugin does using less than 40 words.",
-    "ESP": "(ESP)Describe what your plugin does using less than 40 words.",
-    "FRN": "(FRN)Describe what your plugin does using less than 40 words.",
-    "GRM": "(GRM)Describe what your plugin does using less than 40 words.",
-    "POR": "(POR)Describe what your plugin does using less than 40 words."
+    "ENG": "Sample link of the Plugin template provided with this Swiss Army Framework.",
+    "ESP": "Enlace de muestra de Plugins de complemento proporcionada con este marco del ejercito suizo.",
+    "FRN": "Exemple de lien du modele de plugin fourni avec ce cadre de l'armee suisse.",
+    "GRM": "Beispiellink der Plugin-Vorlage, die mit diesem Swiss Army Framework bereitgestellt wird.",
+    "POR": "Exemplo de link do modelo de plug-in fornecido com este Swiss Army Framework."
   },
   "help-tool-tip":{
-    "ENG": "(ENG)Why, when, and how it makes our lives easier.",
-    "ESP": "(ESP)Why, when, and how it makes our lives easier.",
-    "FRN": "(FRN)Why, when, and how it makes our lives easier.",
-    "GRM": "(GRM)Why, when, and how it makes our lives easier.",
-    "POR": "(POR)Why, when, and how it makes our lives easier."
+    "ENG": "Message to Developer: Please describe why, when, and how it makes our lives easier.",
+    "ESP": "Mensaje para el desarrollador: Describa por que, cuando y como nos facilita la vida.",
+    "FRN": "Message au developpeur: veuillez decrire pourquoi, quand et comment cela nous facilite la vie.",
+    "GRM": "Nachricht an den Entwickler: Bitte beschreiben Sie, warum, wann und wie dies unser Leben erleichtert.",
+    "POR": "Mensagem para o desenvolvedor: descreva por que, quando e como isso facilita nossas vidas."
   },
   "author-sign": "Ed Morales - Boston Ma - emorales7@partners.org"
 }
