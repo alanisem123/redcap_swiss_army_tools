@@ -31,7 +31,7 @@ switch($swiss_army_hook_name) {
 						
 			if (count($additionalLangues)>0) {
 				$botones = "<div class='btn-group nowrap' style='float:right;'>
-				<button id='lang_switch-btn-placeholder' data-trigger='click' data-toggle='popover' data-placement='top' data-content='' title='' class='btn btn-primary btn-saveand' onclick='return false;' style='margin-bottom:2px;font-size:13px !important;padding:6px 8px;' tabindex='0' data-original-title='<b>Click the down arrow button to view more languages.</b>'>$currentLanguage $project_id $swiss_army_hook_name</button>
+				<button id='lang_switch-btn-placeholder' data-trigger='click' data-toggle='popover' data-placement='top' data-content='' title='' class='btn btn-primary btn-saveand' onclick='return false;' style='margin-bottom:2px;font-size:13px !important;padding:6px 8px;' tabindex='0' data-original-title='<b>Click the down arrow button to view more languages.</b>'>$currentLanguage</button>
 				<button id='lang_switch-btn-dropdown' title='More languages' class='btn btn-primary btn-savedropdown dropdown-toggle' style='margin-bottom:2px;font-size:13px !important;padding:6px 8px;' tabindex='0' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false' onclick='openSaveBtnDropDown(this,event);return false;'>
 					<span class='caret'></span> <span class='sr-only'></span>
 				</button>

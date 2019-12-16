@@ -14,7 +14,7 @@ $script = <<<SCRIPT
 		 body {
 	/*background-color: #222;*/
 	color: #0c0c0c;
-	/*background-image: -webkit-linear-gradient(left, #005e82, #222);*/
+	background-image: -webkit-linear-gradient(left, #bf9f43, #a04b01);
 	/*background-image: url('/redcap/modules/swiss_army_{$version}/features/themes_hook/pics/forest.jpg');
 	background-repeat:repeat;*/
 }
