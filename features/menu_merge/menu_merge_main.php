@@ -1,21 +1,22 @@
 <?php
 /**
- * Hook NAME: sub_lists.php
- * DESCRIPTION: Script for reading the @COND-LISTS action tag to copy in a dropdown list the option selected in one of the conditional lists, 
- * each of them containing a subset of options (each using different code numbers) in the target dropdown list where the action tag has been declared.
- * NOTE: This new action tag can be added to the REDCap list of tags (but not necessarily) by inserting its name and explanation in redcap\redcap_v7.4.3\Classes\Form.php:
- *       Name:          @COND-LISTS
- *       Explanation:   Conditional list: Sets the value in a global dropdown list from a series of sublists. This action tag copies in a dropdown list the option selected 
- *                      in one of the conditional lists, each of them containing a subset of options in the target 
- *                      dropdown list field where the action tag has been declared. It's needed that the sublists will be branched logic in such a way that at any given case
- *                      only one sublist is shown and the global dropdown list is hidden. The action tag format must follow the pattern 
- *                      @COND-LISTS='????' in which it will list the fields acting as sub dropdown lists, declared inside single quotes. - e.g.,  
- *                      @COND-LISTS='[america],[europe],[africa],[asia],[oceania]' 
- *       To work in a given project, this Hook still will need to be added to the corresponding hook project's folder
- * This version works for fields used in regular or repeatable instruments or even in repeatable events
- * Uses REDCap hook/plugin functions. 
- * TO DO: Optimize by running only in current instrument and instance (instrument or event)
- // * VERSION:     4.0
+ * Hook NAME: menu_merge.php
+ * DESCRIPTION: Script for reading the @MENU-MERGE action tag to copy in a dropdown list the option selected in one of dropdown or radio button fields  
+ * each of them containing a subset of options (each using different code numbers for different options -but repeated options with the same code are allowed-) 
+ * in the target dropdown list where the action tag has been declared.
+ * NOTE: This new action tag can be added to the REDCap list of tags using the action_tag_descr included in this module
+ *       Name:          @MENU-MERGE
+ *       Explanation:   Menu Merge: Sets the value in a global dropdown list from a series of dropdown/radio buttons or sublists. This action tag copies in a dropdown list the option selected 
+ *                      in one of the sublists, each of them containing a subset of options in the target dropdown list field where the action tag has been declared. 
+ *						The sublists need to be branched logic in such a way that in any given case only one sublist is shown and the global dropdown list is hidden. 
+ *						The action tag format must follow the pattern 
+ *                      @MENU-MERGE='????' in which it will list the fields acting as sub dropdown lists, declared inside single quotes. - e.g.,  
+ *                      @MENU-MERGE='[america],[europe],[africa],[asia],[oceania]' 
+ *       To work in a given project, the External Module "Swiss Army Tool" still is needed to be enabled for the corresponding project
+ * This version works for fields used in regular or repeatable instruments or in repeatable events
+ * Uses REDCap hook/plugin functions.
+ * VERSION: 1.0 
+ // * Version from original development:     4.0
  * AUTHOR:      Victor Espinosa
  */
 
@@ -35,14 +36,14 @@ foreach($fields as $field) {
 	$instances_used = array();
 	// checks if there is any annotation for that field
 	if($dd[$field][field_annotation] != "") {
-		// Looking for COND-LISTS action tag
-		$pos = strpos($dd[$field][field_annotation],'@COND-LISTS');
+		// Looking for MENU-MERGE action tag
+		$pos = strpos($dd[$field][field_annotation],'@MENU-MERGE');
 		if ($pos === false) 
 		  continue;
 		else if ($pos >= 0) {
-			echo "field with Sublist: " . $field . " </br>";
+			//echo "field with Sublist: " . $field . " </br>";
 			// 
-			// Gets @COND-LISTS from the annotation field
+			// Gets @MENU-MERGE from the annotation field
 			$action_tag_substr = substr($dd[$field][field_annotation],$pos);
 			// Gets position of initial and final quotations (')
 			$pos_quotation = strpos($action_tag_substr,"'");
@@ -97,62 +98,30 @@ foreach($fields as $field) {
 					}
 				}
 			}
-			echo "loop </br>";
+			//echo "loop </br>";
 			// NON-REPEATABLE CASE: saves selected option in REDCap global dropdown field
-//*
-echo ("<pre>selection:");
-print_r($selection);
-echo ("</pre></ br>"); 
-//*/						
-/*
-echo ("<pre>selection_rep:");
-print_r($selection_rep);
-echo ("</pre></ br>"); 
-*/						
 			if($selection == 0)
 				$add_selection[$record][$event_id][$field] = "";
 			else 
 				$add_selection[$record][$event_id][$field] = $selection;
 			$response = REDCap::saveData('array', $add_selection, $overwriteBehavior = 'overwrite');
 			// REPEATABLE FORM CASE: saves selected option in REDCap global dropdown field
-/*
-echo ("<pre>instances_used_keys:");
-print_r($instances_used_keys);
-echo ("</pre></ br>"); 
-*/						
 			foreach($instances_used_keys as $instance) {
 				if($selection_rep[$instance][$field] == 0)
 					$add_selection_rep[$record]["repeat_instances"][$event_id][$instrument_name][$instance][$field] = "";
 				else
 					$add_selection_rep[$record]["repeat_instances"][$event_id][$instrument_name][$instance][$field] = $selection_rep[$instance][$field];
 				$response_rep = REDCap::saveData('array', $add_selection_rep, $overwriteBehavior = 'overwrite');
-/*
-echo ("<pre>response_rep:");
-print_r($response_rep);
-echo ("</pre></ br>"); 
-*/						
 			}
 			// REPEATABLE EVENT CASE: saves selected option in REDCap global dropdown field
-/*
-echo ("<pre>event_instances_used_keys:");
-print_r($event_instances_used_keys);
-echo ("</pre></ br>"); 
-*/						
 			foreach($event_instances_used_keys as $instance) {
 				if($selection_rep[$instance][$field] == 0)
 					$add_selection_rep[$record]["repeat_instances"][$event_id][''][$instance][$field] = "";
 				else
 					$add_selection_rep[$record]["repeat_instances"][$event_id][''][$instance][$field] = $selection_rep[$instance][$field];
 				$response_rep = REDCap::saveData('array', $add_selection_rep, $overwriteBehavior = 'overwrite');
-//*
-echo ("<pre>response_rep:");
-print_r($response_rep);
-echo ("</pre></ br>"); 
-//*/						
 			}
 		}
 	}
 }
-//exit;  // Useful for testing
-
 ?>
