@@ -12,7 +12,7 @@ use ExternalModules\ExternalModules as EM;
 // If there is not setting saved, no css-theme should be included.
 // In turn, this will show the REDCap theme.
 
-$valid_themes = array("dark_mode","forest","stars","aquarium","sunset","tulips","skulls");
+$valid_themes = array("dark_mode","terra_mode","stars","sunset","skulls");
 $theme = AEM::getUserSetting('theme_selected');
 
 //var_dump(list($prefix, $version) = EM::getParseModuleDirectoryPrefixAndVersion(AEM::getModuleDirectoryName()));

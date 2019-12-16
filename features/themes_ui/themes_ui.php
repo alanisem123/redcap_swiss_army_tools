@@ -93,10 +93,10 @@ $URI = explode("?", $_SERVER['REQUEST_URI'])[0];
                      title="Dark Mode">
             </label>
             <label>
-                <input type="radio" class="theme" name="theme" id="theme_selected" value="forest">
+                <input type="radio" class="theme" name="theme" id="theme_selected" value="terra_mode">
                 <img class="responsive"
-                     src="/redcap/redcap_v<?php print $redcap_version[0]; ?>/ExternalModules/?prefix=swiss_army&page=features/themes_hook/pics/forest.jpg"
-                     title="Forest">
+                     src="/redcap/redcap_v<?php print $redcap_version[0]; ?>/ExternalModules/?prefix=swiss_army&page=features/themes_hook/pics/terramode.PNG"
+                     title="Terra Mode">
             </label>
         </div>
         <div>
@@ -106,34 +106,17 @@ $URI = explode("?", $_SERVER['REQUEST_URI'])[0];
                      src="/redcap/redcap_v<?php print $redcap_version[0]; ?>/ExternalModules/?prefix=swiss_army&page=features/themes_hook/pics/stars.jpg"
                      title="Stars">
             </label>
-            <label>
-                <input type="radio" class="theme" name="theme" id="theme_selected" value="aquarium">
-                <img class="responsive"
-                     src="/redcap/redcap_v<?php print $redcap_version[0]; ?>/ExternalModules/?prefix=swiss_army&page=features/themes_hook/pics/aquarium.jpg"
-                     title="Aquarium">
-            </label>
-        </div>
-        <div>
+
             <label>
                 <input type="radio" class="theme" name="theme" id="theme_selected" value="sunset">
                 <img class="responsive"
                      src="/redcap/redcap_v<?php print $redcap_version[0]; ?>/ExternalModules/?prefix=swiss_army&page=features/themes_hook/pics/sunset2x2.jpg"
                      title="Sunset">
             </label>
-            <label>
-                <input type="radio" class="theme" name="theme" id="theme_selected" value="tulips">
-                <img class="responsive"
-                     src="/redcap/redcap_v<?php print $redcap_version[0]; ?>/ExternalModules/?prefix=swiss_army&page=features/themes_hook/pics/tulips2x2.jpg"
-                     title="Tulips">
-            </label>
+
         </div>
         <div>
-            <label>
-                <input type="radio" class="theme" name="theme" id="theme_selected" value="skulls">
-                <img class="responsive"
-                     src="/redcap/redcap_v<?php print $redcap_version[0]; ?>/ExternalModules/?prefix=swiss_army&page=features/themes_hook/pics/skullline3x3.jpg"
-                     title="Skulls">
-            </label>
+
             <label>
                 <input type="radio" class="theme" name="theme" id="theme_selected" value="redcap">
                 <img class="responsive"

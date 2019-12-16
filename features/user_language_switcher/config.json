@@ -1,0 +1,29 @@
+{
+  "name": "user_language_switcher",
+  "display_name": "ULS",
+  "type": "hook",
+  "version": "1.0",
+  "page": "Ignore",
+  "main_file_name": "user_language_switcher.php",
+  "redcap_add_edit_records_page": "false",
+  "redcap_control_center": "false",
+  "redcap_custom_verify_username": "false",
+  "redcap_data_entry_form": "false",
+  "redcap_data_entry_form_top": "false",
+  "redcap_every_page_before_render": "true",
+  "redcap_every_page_top": "true",
+  "redcap_project_home_page": "false",
+  "redcap_save_record": "false",
+  "redcap_survey_complete": "false",
+  "redcap_survey_page": "false",
+  "redcap_survey_page_top": "false",
+  "redcap_user_rights": "false",
+  "description": {
+    "ENG": "<b>ULS -</b> <i>If there are more than one language available at this REDCap instance then a button to switch languages will be shown at the top</i>",
+    "ESP": "<b>ULS -</b> <i>Si hay más de un idioma disponible en esta instancia de REDCap, se mostrará un botón para cambiar de idioma en la parte superior</i>",
+    "FRN": "<b>ULS -</b> <i>S'il y a plus d'une langue disponible dans cette instance REDCap, un bouton pour changer de langue sera affiché en haut</i>",
+    "GRN": "<b>ULS -</b> <i>Wenn in dieser REDCap-Instanz mehr als eine Sprache verfügbar ist, wird oben eine Schaltfläche zum Wechseln der Sprache angezeigt</i>",
+    "POR": "<b>ULS -</b> <i>Se houver mais de um idioma disponível nesta instância do REDCap, um botão para alternar idiomas será mostrado na parte superior.</i>"
+  },
+  "author-sign": "Alvaro Ciganda - Montevideo UY - aciganda@gmail.com"
+}

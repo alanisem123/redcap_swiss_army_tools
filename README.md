@@ -3,7 +3,7 @@
 ## End-user documentation (REDCap Admins, please click the [local link](?prefix=swiss_army&page=adminReadme.md) or [GitHub link](https://github.com/alanisem123/redcap_swiss_army_tools/blob/master/adminReadme.md))
 
 The Swiss Army Tool is a framework (provided in form of an External Module) that allows managing custom made action tags, smart variables,
-hooks, and plugins from the Control Center. It was developed for the REDCap Spanish Hackathon of 12'19 with the sole purpose of enabling collaboration among the group
+hooks, and plugins from the Control Center. It was developed for the REDCap Spanish Group's Hackathon of 12'19 with the sole purpose of enabling collaboration among the group
 and provide any and all resulting products back to the REDCap Consortium.
 
 <b>Notice:</b> the work outlined here is covered by the MIT license. Please look for its definition elsewhere.Yet, in essence it means:
@@ -20,12 +20,13 @@ The following outlines the features that were produced during REDCap Spanish Hac
 5. Plugin Template - Template folder, with all required files to get you started building (or incorporating) your own plugin into the Swiss Army Tool framework. By - Ed Morales (emorales7@partners.org)
 6. Restock coded values - Action-tag that restocks a code selected from a drop down or radio field back into its master fields - proves useful for conditional lists. By Victor Espinosa (victor.espinosa@viha.ca)
 7. Themes Hook and UI - Project level plugin that allows changing REDCap's background theme; featuring Dark Mode. By Ed Morales (emorales7@partners.org)
+8. User Language Switch - Hook that allows switching between language files using a button if there are one or more languages available at this REDCap instance. By Alvaro Ciganda (aciganda@gmail.com)
 
 Furthermore, please be aware that the Swiss Army Tools External Module includes a language setting that must be set for every project. It's defaulted to be displayed in English, but it can be set to either:
 Spanish, French, German, or Portuguese. 
 
 Please visit the following link for more information about results of this hackathon:
-Link
+[Link](https://community.projectredcap.org/articles/75452/redcap-spanish-group-project-draft.html)
 
 ## Call to Action
 All the work provided in this External Module was voluntary without any monitory incentive. If you find this work useful, please Watch/Star/Fork its GitHub repository or email the author of the 

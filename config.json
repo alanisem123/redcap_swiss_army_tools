@@ -5,8 +5,23 @@
 
 	"authors": [
 		{
-			"name": "Eduardo Morales",
-			"email": "em@partners.org",
+			"name": "Alvaro Ciganda",
+			"email": "aciganda@gmail.com",
+			"institution": "Montevideo UY"
+		},
+		{
+			"name": "Victor Espinosa",
+			"email": "victor.espinosa@viha.ca",
+			"institution": "Island Health"
+		},
+		{
+			"name": "Luis Sanchez",
+			"email": "luischipper@gmail.com",
+			"institution": "REDCap Spanish Group"
+		},
+		{
+			"name": "Ed Morales",
+			"email": "emorales@bwh.harvard.edu",
 			"institution": "PHS"
 		}
 	],
@@ -27,7 +42,7 @@
 		"redcap_user_rights"
 	],
 
-	"description": "Addition to REDCap's External Module framework that provides control over custom hooks and plugins, successfully creating a Swiss Army Knife of novel REDCap tools that can be enabled per project basis. This Swiss Army Framework was created for the REDCap Spanish group hakacthon of 12/19, and it includes translation features, and end-user documentation. The current version contains 7 new features, created by a total of 8 different authors. Please read the documentation for a complete list of new features included in this version.",
+	"description": "Addition to REDCap's External Module framework that provides control over custom hooks and plugins, successfully creating a Swiss Army Knife of novel REDCap tools. The Swiss Army Tools Framework was created for the REDCap Spanish Group's hackathon of 12/19. It includes translation features for every single one of its tools, plus end-user documentation UI. The current version contains a total of 8 new features, including: 1) Add action tags to REDCap's Action Tag Description Pop-up, 2) Background theme selector (featuring Dark Mode), 3) Merge Menu selection, 4) Language (file) Switch. Please see its documentation for a full link of the features included in this Swiss Army Tools External Module.",
 
 	"system-settings": [
 		{
@@ -66,6 +81,13 @@
 		{
 			"key": "themes_hook",
 			"name": "<b>Themes Hook:</b> <i> Select from six different themes to change REDCap's background. The included themes are: 1), 2), 3), 4), 5, 6) REDCap original theme. <br> <b>Requirement:</b> The plugin named 'Themes UI' must be enable too. <br> <b>Author:</b> Ed Morales (PHS) emorales7@partners.org</i>",
+			"required": false,
+			"type": "checkbox",
+			"repeatable": false
+		},
+		{
+			"key": "user_language_switcher",
+			"name": "<b>Allow users to select language:</b> <i>If there are more than one language available at this REDCap instance then a button to switch languages will be shown at the top.</i> <br> <b>Author:</b> Alvaro Ciganda aciganda@gmail.com",
 			"required": false,
 			"type": "checkbox",
 			"repeatable": false

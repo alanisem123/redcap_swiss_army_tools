@@ -33,11 +33,11 @@
     "POR": "Altere o tema de plano de fundo do REDCap."
   },
   "help-tool-tip":{
-    "ENG": "There are 6 options to choose from.",
-    "ESP": "Hay 6 opciones para elegir.",
-    "FRN": "Il y a 6 options a choisir.",
-    "GRM": "Es stehen 6 Optionen zur Auswahl.",
-    "POR": "Existem 6 opcoes para escolher."
+    "ENG": "There are 4 options to choose from.",
+    "ESP": "Hay 4 opciones para elegir.",
+    "FRN": "Il y a 4 options a choisir.",
+    "GRM": "Es stehen 4 Optionen zur Auswahl.",
+    "POR": "Existem 4 opcoes para escolher."
   },
   "save-button-label":{
     "ENG": "Save Selection",
