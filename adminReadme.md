@@ -1,7 +1,7 @@
 # Swiss Army Tools (External Module)
 
 # Documentation for REDCap Administrators
-The Swiss Army Tool is a framework (provided in form of an External Module) that allows managing custom made action tags, smart variables,
+The Swiss Army Tools is a framework (provided in form of an External Module) that allows managing custom made action tags, smart variables,
 hooks, and plugins from the Control Center. It was developed for the REDCap Spanish Group's Hackathon of 12'19 with the sole purpose of enabling collaboration among the group
 and provide any and all resulting products back to the REDCap Consortium.
 
@@ -16,12 +16,13 @@ proves valuable when a feature becomes obsolete (due to new technology, a REDCap
 
 ## What's included?
 The following outlines the features that were produced during REDCap Spanish Hackathon 12'19 and are included in this version of the Swiss Army Tool External Module:
+0. Swiss Army Framework that allows collaboration between developers - by Ed Morales (emorales7@partners.org) & Alvaro Ciganda (aciganda@gmail.com)
 1. Advanced Tools plugin - Project level plugin, added to the Online Designer, that provides further information on every feature and plugin enabled on the Swiss Army Tool framework; every enabled plugin is shown in an itemized list of links. By - Ed Morales (emorales7@partners.org)
 2. Add Custom Action Tag Descriptions - Hook that identifies action-tags added to the Swiss Army Framework and includes their descriptions to REDCap's pop-up window describing Action Tags. By - Ed Morales (emorales7@partners.org)
 3. Translate "*Must Provide Value" - Action-tag that allows changing the label of required fields from English, to Spanish, French, German, or Portuguese. By - Ed Morales (emorales7@partners.org)
 4. Auto PHI checker - Project level plugin that identifies and flags PHI fields in your project's data dictionary. By Luis Sanchez (luischipper@gmail.com)
 5. Plugin Template - Template folder, with all required files to get you started building (or incorporating) your own plugin into the Swiss Army Tool framework. By - Ed Morales (emorales7@partners.org)
-6. Restock coded values - Action-tag that restocks a code selected from a drop down or radio field back into its master fields - proves useful for conditional lists. By Victor Espinosa (victor.espinosa@viha.ca)
+6. Menu Merge - Action-tag that copies selected values from two or more radio buttons/drop down conditional lists to another that contains all the options of the former ones. It acts like in the form of selecting a continent from a list and then a country from a specific list and saving the option in the global list (for reporting and other purposes). By Victor Espinosa (victor.espinosa@viha.ca)
 7. Themes Hook and UI - Project level plugin that allows changing REDCap's background theme; featuring Dark Mode. By Ed Morales (emorales7@partners.org)
 8. User Language Switch - Hook that allows switching between language files using a button if there are one or more languages available at this REDCap instance. By Alvaro Ciganda (aciganda@gmail.com)
 
